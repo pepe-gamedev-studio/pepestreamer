@@ -134,7 +134,7 @@ TestOverlay::DrawImage(const std::string &filename, int16_t x, int16_t y) {
     }
 
     return std::unique_ptr<elements::ImageElement, ImageElementDeleter>(
-        new elements::ImageElement(graph.FindRecipeItem<commands::Overlay>(overlayName), graph.ManagedGraph()),
+        new elements::ImageElement(graph.FindRecipeItem<commands::Overlay>(overlayName), &graph, m),
         [&, imageName, overlayName](elements::ImageElement *ptr) {
             auto configurator = graph.Configure();
             auto links = graph.GetFilterLinks(ptr->Command());

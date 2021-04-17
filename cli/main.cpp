@@ -114,8 +114,7 @@ int Main(int argc, char *argv[]) {
                 case 'i': {
                     auto found = imageList.find(id);
                     if (found != imageList.end()) {
-                        found->second->X(x);
-                        found->second->Y(y);
+                        found->second->Position(x, y);
                     } else {
                         throw std::runtime_error("Failed to find image entity");
                     }
