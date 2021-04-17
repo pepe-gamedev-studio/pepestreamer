@@ -1,0 +1,11 @@
+#pragma once
+#include "overlay/ConfigurableFilterGraph.h"
+#include "overlay/FilterGraph.h"
+#include "overlay/FilterGraphConfigBuilder.h"
+#include "overlay/FilterGraphConstructCommand.h"
+#include "overlay/FilterGraphRecipe.h"
+#include "overlay/commands/DrawText.h"
+#include "overlay/commands/Link.h"
+#include "overlay/commands/Movie.h"
+#include "overlay/commands/Overlay.h"
+#include "overlay/elements/TextElement.h"
